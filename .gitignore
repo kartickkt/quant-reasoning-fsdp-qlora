@@ -1,31 +1,63 @@
+# -------------------------
 # Python
+# -------------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Virtual environments
 venv/
-.env
+.env/
+.envrc
 
-# Training outputs
-checkpoint-*/
-artifacts/
-adapter/
-outputs/
-logs/
+# -------------------------
+# Jupyter / IDE
+# -------------------------
+.ipynb_checkpoints/
+.vscode/
+.idea/
 
-# Model files
-*.pt
-*.bin
-*.safetensors
-*.tar.gz
-
-# Data
-data/
-datasets/
-
-# OS
+# -------------------------
+# OS files
+# -------------------------
 .DS_Store
 Thumbs.db
 
-# AWS / secrets
-.aws/
-*.pem
-.env
+# -------------------------
+# Model weights & adapters
+# (never commit large binaries)
+# -------------------------
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.tar.gz
+
+adapter/
+checkpoint-*/
+artifacts/
+
+# -------------------------
+# Training / evaluation outputs
+# -------------------------
+comparison_samples.json
+final_metrics.json
+output.tar.gz
+model.tar.gz
+
+# -------------------------
+# Data (keep only small samples if needed)
+# -------------------------
+data/*.jsonl
+data/*.csv
+
+# -------------------------
+# Hugging Face / cache
+# -------------------------
+.cache/
+.huggingface/
