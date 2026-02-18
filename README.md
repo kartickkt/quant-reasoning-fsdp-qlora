@@ -64,49 +64,6 @@ This demonstrates **true quantitative reasoning gain**, not memorization.
 
 ---
 
-## Example Outputs
-
-### 1) Drawdown Calculation
-
-**Question**  
-A portfolio falls from 177 to 137. What is the maximum drawdown percentage?
-
-**Base model**  
-Produces partial reasoning but **fails to compute the final percentage**.
-
-**Finetuned model**
-
-
----
-
-## Training
-
-- **Base model:** Mistral-7B-Instruct  
-- **Method:** LoRA fine-tuning  
-- **Distributed strategy:** FSDP (multi-GPU)  
-- **Platform:** AWS SageMaker  
-
-Training converged smoothly:
-
-> Loss decreased from **~1.9 → 0.04**, confirming stable distributed optimization.
-
----
-
-## Evaluation
-
-Evaluation measures **numeric correctness of the final answer**,  
-not text similarity.
-
-| Model | Accuracy |
-|-------|---------|
-| Base Mistral-7B | **2.7%** |
-| LoRA-finetuned | **32.7%** |
-| **Improvement** | **+30 percentage points** |
-
-This demonstrates **true quantitative reasoning gain**, not memorization.
-
----
-
 ## Training
 
 - **Base model:** Mistral-7B-Instruct  
@@ -210,4 +167,3 @@ This repository serves as a **practical reference for distributed LoRA fine-tuni
 - Evaluate on **real financial datasets**  
 - Expand validation benchmark  
 - Deploy **autoscaling inference endpoint** for production use  
-
