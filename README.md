@@ -91,8 +91,10 @@ launch_*.py  → SageMaker job launchers
 
 ## Status
 
-✅ Distributed training complete
-✅ Finetuned adapter validated
-✅ Measurable reasoning improvement demonstrated
+-> Distributed training completed
+
+-> Finetuned adapter validated
+
+-> Measurable reasoning improvement demonstrated
 
 This repository serves as a **practical reference for distributed LoRA fine-tuning in real ML workflows**.
