@@ -107,21 +107,6 @@ This demonstrates **true quantitative reasoning gain**, not memorization.
 
 ---
 
-## Example Outputs
-
-### 1) Drawdown Calculation
-
-**Question**  
-A portfolio falls from 177 to 137. What is the maximum drawdown percentage?
-
-**Base model**  
-Produces partial reasoning but **fails to compute the final percentage**.
-
-**Finetuned model**
-
-
----
-
 ## Training
 
 - **Base model:** Mistral-7B-Instruct  
