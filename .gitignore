@@ -61,3 +61,8 @@ data/*.csv
 # -------------------------
 .cache/
 .huggingface/
+
+# Local debug / experiments
+scripts/debug/
+train/_debug/
+
