@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Training outputs
+checkpoint-*/
+artifacts/
+adapter/
+outputs/
+logs/
+
+# Model files
+*.pt
+*.bin
+*.safetensors
+*.tar.gz
+
+# Data
+data/
+datasets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AWS / secrets
+.aws/
+*.pem
+.env
