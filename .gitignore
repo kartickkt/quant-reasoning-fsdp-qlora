@@ -43,6 +43,16 @@ checkpoint-*/
 artifacts/
 
 # -------------------------
+# Hugging Face / tokenizer artifacts
+# -------------------------
+special_tokens_map.json
+tokenizer.model
+tokenizer_config.json
+training_args.bin
+adapter_config.json
+adapter_model.safetensors
+
+# -------------------------
 # Training / evaluation outputs
 # -------------------------
 comparison_samples.json
@@ -62,7 +72,8 @@ data/*.csv
 .cache/
 .huggingface/
 
+# -------------------------
 # Local debug / experiments
+# -------------------------
 scripts/debug/
 train/_debug/
-
