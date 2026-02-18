@@ -167,3 +167,5 @@ This repository serves as a **practical reference for distributed LoRA fine-tuni
 - Evaluate on **real financial datasets**  
 - Expand validation benchmark  
 - Deploy **autoscaling inference endpoint** for production use  
+
+This project is part of an ongoing effort to build production-ready quantitative reasoning systems with distributed LLM training.
